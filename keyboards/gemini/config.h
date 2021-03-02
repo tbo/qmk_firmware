@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 #define MATRIX_ROWS 10
-#define MATRIX_COLS 6
+#define MATRIX_COLS 7
 
 /*
  * Keyboard Matrix Assignments
@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 #define MATRIX_ROW_PINS { C6, D7, E6, B4, B5 }
-#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
+#define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -86,7 +86,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
+#define DEBOUNCE 2
 
 /* define if matrix has ghost (lacks anti-ghosting diodes) */
 //#define MATRIX_HAS_GHOST
@@ -99,7 +99,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* If defined, GRAVE_ESC will always act as ESC when CTRL is held.
  * This is userful for the Windows task manager shortcut (ctrl+shift+esc).
  */
-// #define GRAVE_ESC_CTRL_OVERRIDE
+#define GRAVE_ESC_ALT_OVERRIDE
+#define GRAVE_ESC_CTRL_OVERRIDE
+#define GRAVE_ESC_GUI_OVERRIDE
+#define GRAVE_ESC_SHIFT_OVERRIDE
 
 /*
  * Force NKRO

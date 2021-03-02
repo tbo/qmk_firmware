@@ -27,22 +27,27 @@
  * represents the switch matrix.
  */
 
+     // KC_GRV  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                          KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_BSPC ,
+     // KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,                          KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_PIPE ,
+     // KC_LCTL ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,KC_BSPC ,        KC_ENT  ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_QUOT ,
+     // KC_MPLY ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,                          KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_NO   ,
+     //                   KC_NO   ,KC_MINS ,KC_EQL  ,KC_NO   ,MT(MOD_LSFT, KC_SPC),        MT(MOD_LGUI , KC_ESC),KC_NO  ,KC_LBRC ,KC_RBRC
 #define LAYOUT(\
-     k00 ,k01 ,k02 ,k03 ,k04 ,                  k05 ,k06 ,k07 ,k08 ,k09 ,\
-     k10 ,k11 ,k12 ,k13 ,k14 ,                  k15 ,k16 ,k17 ,k18 ,k19 ,\
-     k20 ,k21 ,k22 ,k23 ,k24 ,k25 ,        k26 ,k27 ,k28 ,k29 ,k30 ,k31 ,\
-     k32 ,k33 ,k34 ,k35 ,k36 ,k37 ,        k38 ,k39 ,k40 ,k41 ,k42 ,k43 ,\
-          k44 ,k45 ,k46 ,k47 ,k48 ,        k49 ,k50 ,k51 ,k52 ,k53\
+     k00 ,k01 ,k02 ,k03 ,k04 ,k05 ,                  k06 ,k07 ,k08 ,k09 ,k10 ,k11 , \
+     k12 ,k13 ,k14 ,k15 ,k16 ,k17 ,                  k18 ,k19 ,k20 ,k21 ,k22 ,k23 ,\
+     k24 ,k25 ,k26 ,k27 ,k28 ,k29 ,k30 ,        k31 ,k32 ,k33 ,k34 ,k35 ,k36 ,k37 ,\
+     k38 ,k39 ,k40 ,k41 ,k42 ,k43 ,                  k46 ,k47 ,k48 ,k49 ,k50 ,k51 ,\
+               k52 ,k53 ,k54 ,k55 ,k56 ,        k57 ,k58 ,k59 ,k60 ,k61\
 ) \
 { \
-    { k00 ,k01 ,k02 ,k03 ,k04 },\
-    { k10 ,k11 ,k12 ,k13 ,k14 },\
-    { k20 ,k21 ,k22 ,k23 ,k24 ,k25 },\
-    { k32 ,k33 ,k34 ,k35 ,k36 ,k37 },\
-    { KC_NO, k44 ,k45 ,k46 ,k47 ,k48 },\
-    { k09 ,k08 ,k07 ,k06 ,k05 },\
-    { k19 ,k18 ,k17 ,k16 ,k15 },\
-    { k31 ,k30 ,k29 ,k28 ,k27 ,k26 },\
-    { k43 ,k42 ,k41 ,k40 ,k39 ,k38 },\
-    { KC_NO, k53 ,k52 ,k51 ,k50 ,k49 },\
+    { k00 ,k01 ,k02 ,k03 ,k04, k05 },\
+    { k12 ,k13 ,k14 ,k15 ,k16, k17 },\
+    { k24 ,k25 ,k26 ,k27 ,k28 ,k29 ,k30 },\
+    { k38 ,k39 ,k40 ,k41 ,k42 ,k43 },\
+    { KC_NO, KC_NO,k52 ,k53 ,k54 ,KC_NO ,k56 },\
+    { k11 ,k10 ,k09 ,k08 ,k07 ,k06 },\
+    { k23 ,k22 ,k21 ,k20 ,k19 ,k18 },\
+    { k37 ,k36 ,k35 ,k34 ,k33 ,k32 ,k31 },\
+    { k51 ,k50 ,k49 ,k48 ,k47 ,k46 },\
+    { KC_NO, KC_NO,k61 ,k60 ,k59 ,KC_NO ,k57 },\
 }
